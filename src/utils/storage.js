@@ -1,12 +1,10 @@
+//function to store the data to the local storage
 export const saveToLocalStorage = (key, data) => {
     localStorage.setItem(key, JSON.stringify(data));
-  };
+};
   
-  export const getFromLocalStorage = (key) => {
+//function to access the data to the local storage
+export const getFromLocalStorage = (key) => {
     return JSON.parse(localStorage.getItem(key));
-  };
-  
-  export const removeFromLocalStorage = (key) => {
-    localStorage.removeItem(key);
-  };
+};
   
